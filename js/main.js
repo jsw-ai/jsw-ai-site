@@ -12,4 +12,4 @@ f.addEventListener("submit",e=>{e.preventDefault();const d=new FormData(f),v=k=>
 const subject="Website inquiry - "+v("service");
 const body="Name: "+v("name")+"\nEmail: "+v("email")+"\nCompany: "+v("company")+"\nService: "+v("service")+"\n\nMessage:\n"+v("message");
 window.location.href="mailto:sam@jsw-ai.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
-document.getElementById("form-note").textContent="Opening your email app… If nothing happens, email sam@jsw-ai.com directly.";});
+document.getElementById("form-note").textContent="Opening your email app… If nothing happens, please try again.";});
