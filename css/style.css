@@ -50,7 +50,7 @@ h3{font-size:1.12rem;margin-bottom:6px}
 .industries{background:linear-gradient(180deg,#fff7ed,#fbfaff)}
 .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
 .chips span{padding:11px 22px;border-radius:999px;font-weight:600;color:#fff;transition:transform .2s}.chips span:hover{transform:scale(1.06)}
-.chips span:nth-child(1){background:#0d9488}.chips span:nth-child(2){background:#c2410c}.chips span:nth-child(3){background:#7c3aed}.chips span:nth-child(4){background:#be185d}
+.chips span{background:#7c3aed}.chips span:nth-child(5n+1){background:#0d9488}.chips span:nth-child(5n+2){background:#c2410c}.chips span:nth-child(5n+3){background:#7c3aed}.chips span:nth-child(5n+4){background:#be185d}.chips span:nth-child(5n){background:#1d4ed8}
 .pricing{background:var(--grad);color:#fff}.pricing .lead{color:rgba(255,255,255,.92)}
 .contact{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start}
 #contact{background:radial-gradient(circle at 0% 100%,rgba(124,58,237,.10),transparent 45%),radial-gradient(circle at 100% 0%,rgba(245,158,11,.10),transparent 40%)}
