@@ -74,3 +74,32 @@ footer{padding:34px 0;color:rgba(255,255,255,.8);font-size:.9rem;background:#1e1
 .flow li::before{content:counter(f);position:absolute;left:18px;top:16px;width:32px;height:32px;border-radius:50%;background:var(--grad);color:#fff;font-weight:700;display:grid;place-items:center}
 .flow strong{color:var(--text)}
 .note{color:var(--muted);font-size:.92rem;margin-top:22px}
+
+/* Warm refresh */
+.hl{position:relative;display:inline-block;white-space:nowrap}
+.squiggle{position:absolute;left:-2%;bottom:-.12em;width:104%;height:.32em;color:var(--orange);overflow:visible}
+.squiggle path{stroke-dasharray:320;stroke-dashoffset:0;animation:draw 1.2s .4s ease-out backwards}
+@keyframes draw{from{stroke-dashoffset:320}}
+.hero .squiggle{color:#fbbf24}
+.wave{display:inline-block;animation:wave 2.4s ease-in-out 1s 2;transform-origin:70% 70%}
+@keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(14deg)}20%,40%{transform:rotate(-8deg)}}
+.icon{color:var(--c)}
+.kicker{font-weight:700;color:var(--pink);text-transform:uppercase;letter-spacing:.12em;font-size:.82rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.about{background:linear-gradient(180deg,#fff,#fff7ed)}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.about .lead{margin:16px 0 14px;color:var(--text)}.about .body{color:var(--muted)}
+.about-points{list-style:none;display:grid;gap:16px}
+.about-points li{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.about-points p,.steps.three p{color:var(--muted);font-size:.95rem}
+.dot{--c:var(--accent);flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;color:var(--c);background:color-mix(in srgb,var(--c) 14%,#fff);margin-bottom:12px}
+.about-points .dot{margin:0}
+.steps.three{grid-template-columns:repeat(3,1fr)}
+.step-ic{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--grad);color:#fff;margin-bottom:12px}
+.steps small{display:block;font-weight:700;color:var(--pink);text-transform:uppercase;letter-spacing:.1em;font-size:.75rem}
+.why-grid.three{grid-template-columns:repeat(3,1fr)}
+#ourselves h2{background:none;color:var(--text);-webkit-background-clip:initial;background-clip:initial}
+.why .note{font-weight:600;color:var(--accent-d)}
+.why-item:nth-child(3){border-left-color:var(--orange)}
+@media(prefers-reduced-motion:reduce){.squiggle path{stroke-dashoffset:0}}
+@media(max-width:860px){.about-grid,.steps.three,.why-grid.three{grid-template-columns:1fr;gap:28px}}
+@media(max-width:640px){.hl{white-space:normal}}
